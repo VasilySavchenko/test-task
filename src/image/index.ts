@@ -6,7 +6,7 @@ import site  from "./site.svg"
 import birthday from './birthday.svg';
 
 
-export const CONTACT_ICONS:Record<string, any> = {
+export const CONTACT_ICONS:Record<string, string> = {
 	email: email,
 	phone: phone,
 	female: female,
