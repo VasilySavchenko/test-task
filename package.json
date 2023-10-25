@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "cleanup-dist": "rimraf dist",
-    "build:webpack": "webpack",
-    "watch:webpack": "webpack --watch"
+    "build:webpack": "webpack && npm run open-browser",
+    "watch:webpack": "webpack --watch",
+    "open-browser": "open ./index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/maximlysenko/instagram-like#readme",
   "devDependencies": {
     "esbuild": "^0.13.9",
+    "open": "^9.1.0",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.5.0",
     "typescript": "^5.2.2",
